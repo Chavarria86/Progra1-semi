@@ -29,7 +29,7 @@ namespace academica
         /// </summary>
         private void InitializeComponent()
         {
-            this.grbAlumnos = new System.Windows.Forms.GroupBox();
+            this.grbDatosAlumno = new System.Windows.Forms.GroupBox();
             this.txtNombreAlumno = new System.Windows.Forms.TextBox();
             this.txtDireccionAlumno = new System.Windows.Forms.TextBox();
             this.txtTelefonoAlumno = new System.Windows.Forms.TextBox();
@@ -40,7 +40,7 @@ namespace academica
             this.lblNombreAlumno = new System.Windows.Forms.Label();
             this.txtCodigoAlumno = new System.Windows.Forms.TextBox();
             this.lblCodigoAlumno = new System.Windows.Forms.Label();
-            this.grbNavegacionAlumnos = new System.Windows.Forms.GroupBox();
+            this.grbNavegacionAlumno = new System.Windows.Forms.GroupBox();
             this.lblRegistrosAlumnos = new System.Windows.Forms.Label();
             this.btnUltimoAlumno = new System.Windows.Forms.Button();
             this.btnSiguienteAlumno = new System.Windows.Forms.Button();
@@ -51,29 +51,30 @@ namespace academica
             this.btnEliminarAlumno = new System.Windows.Forms.Button();
             this.btnModificarAlumno = new System.Windows.Forms.Button();
             this.btnNuevoAlumno = new System.Windows.Forms.Button();
-            this.grbAlumnos.SuspendLayout();
-            this.grbNavegacionAlumnos.SuspendLayout();
+            this.grbDatosAlumno.SuspendLayout();
+            this.grbNavegacionAlumno.SuspendLayout();
             this.grbEdicionAlumos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grbAlumnos
+            // grbDatosAlumno
             // 
-            this.grbAlumnos.Controls.Add(this.txtNombreAlumno);
-            this.grbAlumnos.Controls.Add(this.txtDireccionAlumno);
-            this.grbAlumnos.Controls.Add(this.txtTelefonoAlumno);
-            this.grbAlumnos.Controls.Add(this.txtDuiAlumno);
-            this.grbAlumnos.Controls.Add(this.lblDuiAlumno);
-            this.grbAlumnos.Controls.Add(this.lblTelefonoAlumno);
-            this.grbAlumnos.Controls.Add(this.lblDireccionAlumno);
-            this.grbAlumnos.Controls.Add(this.lblNombreAlumno);
-            this.grbAlumnos.Controls.Add(this.txtCodigoAlumno);
-            this.grbAlumnos.Controls.Add(this.lblCodigoAlumno);
-            this.grbAlumnos.Location = new System.Drawing.Point(46, 12);
-            this.grbAlumnos.Name = "grbAlumnos";
-            this.grbAlumnos.Size = new System.Drawing.Size(374, 230);
-            this.grbAlumnos.TabIndex = 0;
-            this.grbAlumnos.TabStop = false;
-            this.grbAlumnos.Text = "Datos Alumnos";
+            this.grbDatosAlumno.Controls.Add(this.txtNombreAlumno);
+            this.grbDatosAlumno.Controls.Add(this.txtDireccionAlumno);
+            this.grbDatosAlumno.Controls.Add(this.txtTelefonoAlumno);
+            this.grbDatosAlumno.Controls.Add(this.txtDuiAlumno);
+            this.grbDatosAlumno.Controls.Add(this.lblDuiAlumno);
+            this.grbDatosAlumno.Controls.Add(this.lblTelefonoAlumno);
+            this.grbDatosAlumno.Controls.Add(this.lblDireccionAlumno);
+            this.grbDatosAlumno.Controls.Add(this.lblNombreAlumno);
+            this.grbDatosAlumno.Controls.Add(this.txtCodigoAlumno);
+            this.grbDatosAlumno.Controls.Add(this.lblCodigoAlumno);
+            this.grbDatosAlumno.Enabled = false;
+            this.grbDatosAlumno.Location = new System.Drawing.Point(46, 12);
+            this.grbDatosAlumno.Name = "grbDatosAlumno";
+            this.grbDatosAlumno.Size = new System.Drawing.Size(374, 230);
+            this.grbDatosAlumno.TabIndex = 0;
+            this.grbDatosAlumno.TabStop = false;
+            this.grbDatosAlumno.Text = "Datos Alumnos";
             // 
             // txtNombreAlumno
             // 
@@ -155,19 +156,19 @@ namespace academica
             this.lblCodigoAlumno.TabIndex = 0;
             this.lblCodigoAlumno.Text = "Codigo:";
             // 
-            // grbNavegacionAlumnos
+            // grbNavegacionAlumno
             // 
-            this.grbNavegacionAlumnos.Controls.Add(this.lblRegistrosAlumnos);
-            this.grbNavegacionAlumnos.Controls.Add(this.btnUltimoAlumno);
-            this.grbNavegacionAlumnos.Controls.Add(this.btnSiguienteAlumno);
-            this.grbNavegacionAlumnos.Controls.Add(this.btnAnteriorAlumno);
-            this.grbNavegacionAlumnos.Controls.Add(this.btnPrimerAlumno);
-            this.grbNavegacionAlumnos.Location = new System.Drawing.Point(12, 313);
-            this.grbNavegacionAlumnos.Name = "grbNavegacionAlumnos";
-            this.grbNavegacionAlumnos.Size = new System.Drawing.Size(229, 70);
-            this.grbNavegacionAlumnos.TabIndex = 1;
-            this.grbNavegacionAlumnos.TabStop = false;
-            this.grbNavegacionAlumnos.Text = "Navegacion";
+            this.grbNavegacionAlumno.Controls.Add(this.lblRegistrosAlumnos);
+            this.grbNavegacionAlumno.Controls.Add(this.btnUltimoAlumno);
+            this.grbNavegacionAlumno.Controls.Add(this.btnSiguienteAlumno);
+            this.grbNavegacionAlumno.Controls.Add(this.btnAnteriorAlumno);
+            this.grbNavegacionAlumno.Controls.Add(this.btnPrimerAlumno);
+            this.grbNavegacionAlumno.Location = new System.Drawing.Point(12, 313);
+            this.grbNavegacionAlumno.Name = "grbNavegacionAlumno";
+            this.grbNavegacionAlumno.Size = new System.Drawing.Size(229, 70);
+            this.grbNavegacionAlumno.TabIndex = 1;
+            this.grbNavegacionAlumno.TabStop = false;
+            this.grbNavegacionAlumno.Text = "Navegacion";
             // 
             // lblRegistrosAlumnos
             // 
@@ -188,6 +189,7 @@ namespace academica
             this.btnUltimoAlumno.TabIndex = 4;
             this.btnUltimoAlumno.Text = ">|";
             this.btnUltimoAlumno.UseVisualStyleBackColor = true;
+            this.btnUltimoAlumno.Click += new System.EventHandler(this.btnUltimoAlumno_Click_1);
             // 
             // btnSiguienteAlumno
             // 
@@ -198,6 +200,7 @@ namespace academica
             this.btnSiguienteAlumno.TabIndex = 3;
             this.btnSiguienteAlumno.Text = ">";
             this.btnSiguienteAlumno.UseVisualStyleBackColor = true;
+            this.btnSiguienteAlumno.Click += new System.EventHandler(this.btnSiguienteAlumno_Click_1);
             // 
             // btnAnteriorAlumno
             // 
@@ -208,6 +211,7 @@ namespace academica
             this.btnAnteriorAlumno.TabIndex = 2;
             this.btnAnteriorAlumno.Text = "<";
             this.btnAnteriorAlumno.UseVisualStyleBackColor = true;
+            this.btnAnteriorAlumno.Click += new System.EventHandler(this.btnAnteriorAlumno_Click_1);
             // 
             // btnPrimerAlumno
             // 
@@ -218,6 +222,7 @@ namespace academica
             this.btnPrimerAlumno.TabIndex = 1;
             this.btnPrimerAlumno.Text = "|<";
             this.btnPrimerAlumno.UseVisualStyleBackColor = true;
+            this.btnPrimerAlumno.Click += new System.EventHandler(this.btnPrimerAlumno_Click);
             // 
             // grbEdicionAlumos
             // 
@@ -258,6 +263,7 @@ namespace academica
             this.btnModificarAlumno.TabIndex = 1;
             this.btnModificarAlumno.Text = "Modificar";
             this.btnModificarAlumno.UseVisualStyleBackColor = true;
+            this.btnModificarAlumno.Click += new System.EventHandler(this.btnModificarAlumno_Click);
             // 
             // btnNuevoAlumno
             // 
@@ -267,6 +273,7 @@ namespace academica
             this.btnNuevoAlumno.TabIndex = 0;
             this.btnNuevoAlumno.Text = "Nuevo";
             this.btnNuevoAlumno.UseVisualStyleBackColor = true;
+            this.btnNuevoAlumno.Click += new System.EventHandler(this.btnNuevoAlumno_Click);
             // 
             // Form1
             // 
@@ -274,15 +281,15 @@ namespace academica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.grbEdicionAlumos);
-            this.Controls.Add(this.grbNavegacionAlumnos);
-            this.Controls.Add(this.grbAlumnos);
+            this.Controls.Add(this.grbNavegacionAlumno);
+            this.Controls.Add(this.grbDatosAlumno);
             this.Name = "Form1";
             this.Text = "ADMINISTRACION ALUMNOS";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.grbAlumnos.ResumeLayout(false);
-            this.grbAlumnos.PerformLayout();
-            this.grbNavegacionAlumnos.ResumeLayout(false);
-            this.grbNavegacionAlumnos.PerformLayout();
+            this.grbDatosAlumno.ResumeLayout(false);
+            this.grbDatosAlumno.PerformLayout();
+            this.grbNavegacionAlumno.ResumeLayout(false);
+            this.grbNavegacionAlumno.PerformLayout();
             this.grbEdicionAlumos.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -290,7 +297,7 @@ namespace academica
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grbAlumnos;
+        private System.Windows.Forms.GroupBox grbDatosAlumno;
         private System.Windows.Forms.TextBox txtNombreAlumno;
         private System.Windows.Forms.TextBox txtDireccionAlumno;
         private System.Windows.Forms.TextBox txtTelefonoAlumno;
@@ -301,7 +308,7 @@ namespace academica
         private System.Windows.Forms.Label lblNombreAlumno;
         private System.Windows.Forms.TextBox txtCodigoAlumno;
         private System.Windows.Forms.Label lblCodigoAlumno;
-        private System.Windows.Forms.GroupBox grbNavegacionAlumnos;
+        private System.Windows.Forms.GroupBox grbNavegacionAlumno;
         private System.Windows.Forms.Button btnUltimoAlumno;
         private System.Windows.Forms.Button btnSiguienteAlumno;
         private System.Windows.Forms.Button btnAnteriorAlumno;

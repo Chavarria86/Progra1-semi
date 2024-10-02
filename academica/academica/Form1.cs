@@ -22,7 +22,7 @@ namespace academica
             InitializeComponent();
         }
 
-     
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -50,7 +50,9 @@ namespace academica
             }
         }
 
-        private void btnSiguienteAlumno_Click(object sender, EventArgs e)
+
+
+        private void btnSiguienteAlumno_Click_1(object sender, EventArgs e)
         {
             if (posicion < miTabla.Rows.Count - 1)
             {
@@ -63,7 +65,14 @@ namespace academica
             }
         }
 
-        private void btnAnteriorAlumno_Click(object sender, EventArgs e)
+        private void btnUltimoAlumno_Click_1(object sender, EventArgs e)
+        {
+
+            posicion = miTabla.Rows.Count - 1;
+            mostrarDatosAlumno();
+        }
+
+        private void btnAnteriorAlumno_Click_1(object sender, EventArgs e)
         {
             if (posicion > 0)
             {
@@ -76,16 +85,55 @@ namespace academica
             }
         }
 
-        private void btnUltimoAlumno_Click(object sender, EventArgs e)
-        {
-            posicion = miTabla.Rows.Count - 1;
-            mostrarDatosAlumno();
-        }
-
-        private void btnPrimeroAlumno_Click(object sender, EventArgs e)
+        private void btnPrimerAlumno_Click(object sender, EventArgs e)
         {
             posicion = 0;
             mostrarDatosAlumno();
+
+        }
+        private void estadoControles(Boolean estado)
+        {
+            grbDatosAlumno.Enabled = estado;
+            grbNavegacionAlumno.Enabled = !estado;
+            btnEliminarAlumno.Enabled = !estado;
+            btnBuscarAlumno.Enabled = !estado;
+        }
+
+        private void btnNuevoAlumno_Click(object sender, EventArgs e)
+        {
+            if (btnNuevoAlumno.Text == "Nuevo")
+            {
+                btnNuevoAlumno.Text = "Guardar";
+                btnModificarAlumno.Text = "Cancelar";
+                estadoControles(true);
+            }
+            else
+            {//Guardar
+
+                btnNuevoAlumno.Text = "Nuevo";
+                btnModificarAlumno.Text = "Modificar";
+                estadoControles(false);
+            }
+        }
+
+        private void btnModificarAlumno_Click(object sender, EventArgs e)
+        {
+            if (btnModificarAlumno.Text == "Modificar")
+            {
+                btnNuevoAlumno.Text = "Guardar";
+                btnModificarAlumno.Text = "Cancelar";
+                estadoControles(true);
+            }
+            else
+            {//Cancelar
+
+                btnNuevoAlumno.Text = "Nuevo";
+                btnModificarAlumno.Text = "Modificar";
+                estadoControles(false);
+
+            }
         }
     }
 }
+    
+
