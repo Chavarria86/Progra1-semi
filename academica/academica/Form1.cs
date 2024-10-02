@@ -16,5 +16,15 @@ namespace academica
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grbNavegacionAlumnos_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
