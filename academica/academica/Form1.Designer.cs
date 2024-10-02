@@ -47,7 +47,6 @@ namespace academica
             this.btnAnteriorAlumno = new System.Windows.Forms.Button();
             this.btnPrimerAlumno = new System.Windows.Forms.Button();
             this.grbEdicionAlumos = new System.Windows.Forms.GroupBox();
-            this.btnBuscarAlumno = new System.Windows.Forms.Button();
             this.btnEliminarAlumno = new System.Windows.Forms.Button();
             this.btnModificarAlumno = new System.Windows.Forms.Button();
             this.btnNuevoAlumno = new System.Windows.Forms.Button();
@@ -236,25 +235,15 @@ namespace academica
             // 
             // grbEdicionAlumos
             // 
-            this.grbEdicionAlumos.Controls.Add(this.btnBuscarAlumno);
             this.grbEdicionAlumos.Controls.Add(this.btnEliminarAlumno);
             this.grbEdicionAlumos.Controls.Add(this.btnModificarAlumno);
             this.grbEdicionAlumos.Controls.Add(this.btnNuevoAlumno);
             this.grbEdicionAlumos.Location = new System.Drawing.Point(322, 313);
             this.grbEdicionAlumos.Name = "grbEdicionAlumos";
-            this.grbEdicionAlumos.Size = new System.Drawing.Size(328, 70);
+            this.grbEdicionAlumos.Size = new System.Drawing.Size(254, 70);
             this.grbEdicionAlumos.TabIndex = 2;
             this.grbEdicionAlumos.TabStop = false;
             this.grbEdicionAlumos.Text = "Navegacion";
-            // 
-            // btnBuscarAlumno
-            // 
-            this.btnBuscarAlumno.Location = new System.Drawing.Point(246, 25);
-            this.btnBuscarAlumno.Name = "btnBuscarAlumno";
-            this.btnBuscarAlumno.Size = new System.Drawing.Size(76, 40);
-            this.btnBuscarAlumno.TabIndex = 3;
-            this.btnBuscarAlumno.Text = "Buscar";
-            this.btnBuscarAlumno.UseVisualStyleBackColor = true;
             // 
             // btnEliminarAlumno
             // 
@@ -399,7 +388,6 @@ namespace academica
         private System.Windows.Forms.Button btnAnteriorAlumno;
         private System.Windows.Forms.Button btnPrimerAlumno;
         private System.Windows.Forms.GroupBox grbEdicionAlumos;
-        private System.Windows.Forms.Button btnBuscarAlumno;
         private System.Windows.Forms.Button btnEliminarAlumno;
         private System.Windows.Forms.Button btnModificarAlumno;
         private System.Windows.Forms.Button btnNuevoAlumno;
