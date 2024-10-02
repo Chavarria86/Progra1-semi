@@ -78,7 +78,7 @@ namespace academica
             this.grbDatosAlumno.Controls.Add(this.txtCodigoAlumno);
             this.grbDatosAlumno.Controls.Add(this.lblCodigoAlumno);
             this.grbDatosAlumno.Enabled = false;
-            this.grbDatosAlumno.Location = new System.Drawing.Point(0, 12);
+            this.grbDatosAlumno.Location = new System.Drawing.Point(2, 12);
             this.grbDatosAlumno.Name = "grbDatosAlumno";
             this.grbDatosAlumno.Size = new System.Drawing.Size(284, 226);
             this.grbDatosAlumno.TabIndex = 0;
@@ -172,7 +172,7 @@ namespace academica
             this.grbNavegacionAlumno.Controls.Add(this.btnSiguienteAlumno);
             this.grbNavegacionAlumno.Controls.Add(this.btnAnteriorAlumno);
             this.grbNavegacionAlumno.Controls.Add(this.btnPrimerAlumno);
-            this.grbNavegacionAlumno.Location = new System.Drawing.Point(12, 313);
+            this.grbNavegacionAlumno.Location = new System.Drawing.Point(14, 313);
             this.grbNavegacionAlumno.Name = "grbNavegacionAlumno";
             this.grbNavegacionAlumno.Size = new System.Drawing.Size(229, 70);
             this.grbNavegacionAlumno.TabIndex = 1;
@@ -238,7 +238,7 @@ namespace academica
             this.grbEdicionAlumos.Controls.Add(this.btnEliminarAlumno);
             this.grbEdicionAlumos.Controls.Add(this.btnModificarAlumno);
             this.grbEdicionAlumos.Controls.Add(this.btnNuevoAlumno);
-            this.grbEdicionAlumos.Location = new System.Drawing.Point(322, 313);
+            this.grbEdicionAlumos.Location = new System.Drawing.Point(324, 313);
             this.grbEdicionAlumos.Name = "grbEdicionAlumos";
             this.grbEdicionAlumos.Size = new System.Drawing.Size(254, 70);
             this.grbEdicionAlumos.TabIndex = 2;
@@ -285,7 +285,7 @@ namespace academica
             this.direccion,
             this.telefono,
             this.dui});
-            this.grdDatosAlumnos.Location = new System.Drawing.Point(286, 49);
+            this.grdDatosAlumnos.Location = new System.Drawing.Point(288, 49);
             this.grdDatosAlumnos.Name = "grdDatosAlumnos";
             this.grdDatosAlumnos.Size = new System.Drawing.Size(541, 209);
             this.grdDatosAlumnos.TabIndex = 3;
@@ -296,7 +296,7 @@ namespace academica
             // 
             this.lblBuscarAlumno.AutoSize = true;
             this.lblBuscarAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscarAlumno.Location = new System.Drawing.Point(290, 21);
+            this.lblBuscarAlumno.Location = new System.Drawing.Point(292, 21);
             this.lblBuscarAlumno.Name = "lblBuscarAlumno";
             this.lblBuscarAlumno.Size = new System.Drawing.Size(92, 25);
             this.lblBuscarAlumno.TabIndex = 4;
@@ -304,7 +304,7 @@ namespace academica
             // 
             // txtBuscarAlumnos
             // 
-            this.txtBuscarAlumnos.Location = new System.Drawing.Point(377, 26);
+            this.txtBuscarAlumnos.Location = new System.Drawing.Point(379, 26);
             this.txtBuscarAlumnos.Name = "txtBuscarAlumnos";
             this.txtBuscarAlumnos.Size = new System.Drawing.Size(450, 20);
             this.txtBuscarAlumnos.TabIndex = 10;
@@ -348,7 +348,7 @@ namespace academica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 385);
+            this.ClientSize = new System.Drawing.Size(910, 393);
             this.Controls.Add(this.txtBuscarAlumnos);
             this.Controls.Add(this.lblBuscarAlumno);
             this.Controls.Add(this.grdDatosAlumnos);
