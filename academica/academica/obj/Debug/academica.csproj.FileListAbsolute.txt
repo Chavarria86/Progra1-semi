@@ -11,3 +11,5 @@ C:\Users\MINEDUCYT\Desktop\MiPrimerProyecto2\academica\academica\obj\Debug\acade
 C:\Users\MINEDUCYT\Desktop\MiPrimerProyecto2\academica\academica\obj\Debug\academica.exe
 C:\Users\MINEDUCYT\Desktop\MiPrimerProyecto2\academica\academica\obj\Debug\academica.pdb
 C:\Users\MINEDUCYT\Desktop\MiPrimerProyecto2\academica\academica\obj\Debug\academica.principal.resources
+C:\Users\MINEDUCYT\Desktop\MiPrimerProyecto2\academica\academica\obj\Debug\academica.docentes.resources
+C:\Users\MINEDUCYT\Desktop\MiPrimerProyecto2\academica\academica\obj\Debug\academica.materias.resources

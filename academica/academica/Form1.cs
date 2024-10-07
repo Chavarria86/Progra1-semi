@@ -97,7 +97,7 @@ namespace academica
             grbDatosAlumno.Enabled = estado;
             grbNavegacionAlumno.Enabled = !estado;
             btnEliminarAlumno.Enabled = !estado;
-            btnBuscarAlumno.Enabled = !estado;
+            
         }
 
         private void btnNuevoAlumno_Click(object sender, EventArgs e)
@@ -187,18 +187,23 @@ namespace academica
             grdDatosAlumnos.DataSource = dv;
         }
 
-        private void dataGridView1_KeyUp(object sender, KeyEventArgs e)
-        {
-            filtrarDatos(txtBuscarAlumnos.Text);
-            //if (e.KeyValue == 13) {//tecla enter
-            seleccionarAllumno();
-            //}
-        }
-        private void seleccionarAllumno()
-        {
-            posicion = miTabla.Rows.IndexOf(miTabla.Rows.Find(grdDatosAlumnos.CurrentRow.Cells["idAlumno"].Value.ToString()));
-            mostrarDatosAlumno();
-        }
+        
+            private void txtBuscarAlumnos_KeyUp(object sender, KeyEventArgs e)
+            {
+                filtrarDatos(txtBuscarAlumnos.Text);
+                //if (e.KeyValue == 13) {//tecla enter
+                seleccionarAllumno();
+                //}
+            }
+            private void seleccionarAllumno()
+            {
+                posicion = miTabla.Rows.IndexOf(miTabla.Rows.Find(grdDatosAlumnos.CurrentRow.Cells["idAlumno"].Value.ToString()));
+                mostrarDatosAlumno();
+            }
+            private void grdDatosAlumnos_CellClick(object sender, DataGridViewCellEventArgs e)
+            {
+                seleccionarAllumno();
+            }
         
 
         private void grdDatosAlumnos_CellClick_1(object sender, DataGridViewCellEventArgs e)

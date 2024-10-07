@@ -32,12 +32,16 @@ namespace academica
             this.txtBuscarMaterias = new System.Windows.Forms.TextBox();
             this.lblBuscarMaterias = new System.Windows.Forms.Label();
             this.grdDatosMaterias = new System.Windows.Forms.DataGridView();
+            this.idMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbRegistrosMaterias = new System.Windows.Forms.GroupBox();
             this.btnEliminarMaterias = new System.Windows.Forms.Button();
             this.btnModificarMaterias = new System.Windows.Forms.Button();
             this.btnNuevoMaterias = new System.Windows.Forms.Button();
             this.grbNavegacionMaterias = new System.Windows.Forms.GroupBox();
-            this.lblRegistrosMateria = new System.Windows.Forms.Label();
+            this.lblRegistrosMaterias = new System.Windows.Forms.Label();
             this.btnUltimoMaterias = new System.Windows.Forms.Button();
             this.btnSiguienteMaterias = new System.Windows.Forms.Button();
             this.btnAnteriorMaterias = new System.Windows.Forms.Button();
@@ -49,10 +53,6 @@ namespace academica
             this.lblNombreMaterias = new System.Windows.Forms.Label();
             this.txtCodigoMaterias = new System.Windows.Forms.TextBox();
             this.lblCodigoMaterias = new System.Windows.Forms.Label();
-            this.idMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatosMaterias)).BeginInit();
             this.grbRegistrosMaterias.SuspendLayout();
             this.grbNavegacionMaterias.SuspendLayout();
@@ -88,6 +88,29 @@ namespace academica
             this.grdDatosMaterias.Name = "grdDatosMaterias";
             this.grdDatosMaterias.Size = new System.Drawing.Size(541, 209);
             this.grdDatosMaterias.TabIndex = 14;
+            // 
+            // idMateria
+            // 
+            this.idMateria.HeaderText = "ID";
+            this.idMateria.Name = "idMateria";
+            // 
+            // codigo
+            // 
+            this.codigo.DataPropertyName = "codigomateria";
+            this.codigo.HeaderText = "CODIGO";
+            this.codigo.Name = "codigo";
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombremateria";
+            this.nombre.HeaderText = "NOMBRE";
+            this.nombre.Name = "nombre";
+            // 
+            // uv
+            // 
+            this.uv.DataPropertyName = "uvmateria";
+            this.uv.HeaderText = "UV";
+            this.uv.Name = "uv";
             // 
             // grbRegistrosMaterias
             // 
@@ -133,7 +156,7 @@ namespace academica
             // 
             // grbNavegacionMaterias
             // 
-            this.grbNavegacionMaterias.Controls.Add(this.lblRegistrosMateria);
+            this.grbNavegacionMaterias.Controls.Add(this.lblRegistrosMaterias);
             this.grbNavegacionMaterias.Controls.Add(this.btnUltimoMaterias);
             this.grbNavegacionMaterias.Controls.Add(this.btnSiguienteMaterias);
             this.grbNavegacionMaterias.Controls.Add(this.btnAnteriorMaterias);
@@ -145,15 +168,15 @@ namespace academica
             this.grbNavegacionMaterias.TabStop = false;
             this.grbNavegacionMaterias.Text = "Navegacion";
             // 
-            // lblRegistrosMateria
+            // lblRegistrosMaterias
             // 
-            this.lblRegistrosMateria.AutoSize = true;
-            this.lblRegistrosMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistrosMateria.Location = new System.Drawing.Point(83, 39);
-            this.lblRegistrosMateria.Name = "lblRegistrosMateria";
-            this.lblRegistrosMateria.Size = new System.Drawing.Size(51, 20);
-            this.lblRegistrosMateria.TabIndex = 5;
-            this.lblRegistrosMateria.Text = "x de n";
+            this.lblRegistrosMaterias.AutoSize = true;
+            this.lblRegistrosMaterias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistrosMaterias.Location = new System.Drawing.Point(83, 39);
+            this.lblRegistrosMaterias.Name = "lblRegistrosMaterias";
+            this.lblRegistrosMaterias.Size = new System.Drawing.Size(51, 20);
+            this.lblRegistrosMaterias.TabIndex = 5;
+            this.lblRegistrosMaterias.Text = "x de n";
             // 
             // btnUltimoMaterias
             // 
@@ -263,29 +286,6 @@ namespace academica
             this.lblCodigoMaterias.TabIndex = 0;
             this.lblCodigoMaterias.Text = "Codigo:";
             // 
-            // idMateria
-            // 
-            this.idMateria.HeaderText = "ID";
-            this.idMateria.Name = "idMateria";
-            // 
-            // codigo
-            // 
-            this.codigo.DataPropertyName = "codigomateria";
-            this.codigo.HeaderText = "CODIGO";
-            this.codigo.Name = "codigo";
-            // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombremateria";
-            this.nombre.HeaderText = "NOMBRE";
-            this.nombre.Name = "nombre";
-            // 
-            // uv
-            // 
-            this.uv.DataPropertyName = "uvmateria";
-            this.uv.HeaderText = "UV";
-            this.uv.Name = "uv";
-            // 
             // materias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,7 +321,7 @@ namespace academica
         private System.Windows.Forms.Button btnModificarMaterias;
         private System.Windows.Forms.Button btnNuevoMaterias;
         private System.Windows.Forms.GroupBox grbNavegacionMaterias;
-        private System.Windows.Forms.Label lblRegistrosMateria;
+        private System.Windows.Forms.Label lblRegistrosMaterias;
         private System.Windows.Forms.Button btnUltimoMaterias;
         private System.Windows.Forms.Button btnSiguienteMaterias;
         private System.Windows.Forms.Button btnAnteriorMaterias;
