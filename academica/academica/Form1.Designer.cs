@@ -290,7 +290,6 @@ namespace academica
             this.grdDatosAlumnos.Size = new System.Drawing.Size(541, 209);
             this.grdDatosAlumnos.TabIndex = 3;
             this.grdDatosAlumnos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatosAlumnos_CellClick_1);
-            this.grdDatosAlumnos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyUp);
             // 
             // lblBuscarAlumno
             // 
