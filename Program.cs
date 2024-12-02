@@ -26,7 +26,7 @@ app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 
-IApplicationBuilder applicationBuilder = app.UseAuthorization();
+app.UseAuthorization();
 
 app.MapControllers();
 
